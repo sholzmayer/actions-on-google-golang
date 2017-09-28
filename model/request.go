@@ -49,7 +49,7 @@ type ApiAiRequest struct {
 				Intent    string `json:"intent"`
 				RawInputs []struct {
 					Query     string `json:"query"`
-					InputType int    `json:"input_type"`
+					InputType string    `json:"input_type"`
 				} `json:"raw_inputs"`
 			} `json:"inputs"`
 			User struct {
@@ -75,7 +75,7 @@ type ApiAiRequest struct {
 			Conversation struct {
 				ConversationToken string `json:"conversation_token"`
 				ConversationID    string `json:"conversation_id"`
-				Type              int    `json:"type"`
+				Type              string    `json:"type"`
 			} `json:"conversation"`
 		} `json:"data"`
 	} `json:"originalRequest"`
