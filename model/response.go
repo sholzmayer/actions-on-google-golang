@@ -11,7 +11,7 @@ type ServiceResponse struct {
 				OptContext  string   `json:"opt_context"`
 				Permissions []string `json:"permissions"`
 			} `json:"permissions_request"`
-			ExpectedInput []ExpectedInput `json:"expectedInput, omitempty"`
+			ExpectedInput []ExpectedInput `json:"expectedInputs, omitempty"`
 		} `json:"google"`
 	} `json:"data"`
 	ContextOut []struct {
