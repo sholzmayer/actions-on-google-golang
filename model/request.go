@@ -58,6 +58,7 @@ type ApiAiRequest struct {
 				AccessToken string `json:"access_token"`
 			} `json:"user"`
 			Device struct {
+				DeviceId string `json:"uniqueDeviceId"`
 				Location struct {
 					Coordinates struct {
 						Latitude  float64 `json:"latitude"`
